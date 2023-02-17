@@ -24,7 +24,7 @@ const SignUp = () => {
       })
       .catch((err) => {
         console.log(err?.response?.data?.message);
-        alert(err?.response?.data?.message);
+        alert(err?.response?.data?.message|| err.response.data.error);
       });
   };
 
